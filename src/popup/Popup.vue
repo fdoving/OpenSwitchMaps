@@ -14,7 +14,7 @@
         @click.left="openMapInCurrentTab(map)"
         @click.middle="openMapInOtherTab(map)"
       >
-        <img :src="'http://www.google.com/s2/favicons?domain=' + map.domain">
+        <img :src="'https://icons.duckduckgo.com/ip3/' + map.domain + '.ico'">
         {{ map.name }}
       </p>
     </div>
@@ -76,6 +76,7 @@ module.exports = {
   p.map img {
     vertical-align: text-bottom;
     margin-right: 5px;
+    width: 16px
   }
 
   p.map:hover {
